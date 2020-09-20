@@ -688,7 +688,14 @@
         <!-- Core theme JS-->
         <script src="dist/js/scripts.js"></script>
         <!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
+        <!-- Count view-->
+        <script>
+            function countView(res) {
+                $("#numOfViewer").text(res.value + " ")
+            }
+            </script>
+            <script async src="https://api.countapi.xyz/hit/maithedung.netlify.app/visits?callback=countView"></script>
     </body>
 </html>
